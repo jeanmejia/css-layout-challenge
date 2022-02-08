@@ -10,10 +10,12 @@ import { WhiteText } from './WhiteText';
 import { WhiteTinyText } from './WhiteTinyText';
 import { YellowButton } from './YellowButton';
 import { HorizontalLine} from '../HorizontalLine';
+import { CheckboxDiv } from './CheckboxDiv';
 export const Sidebar = () => {
     return (
         <SidebarContainer>
             <GradientRectangle/>
+            <CheckboxDiv>
             <CheckboxCard>
                 <WhiteSquare/>
                 <WhiteTinyText>Home</WhiteTinyText>
@@ -38,6 +40,7 @@ export const Sidebar = () => {
                 <WhiteSquare/>
                 <WhiteTinyText>Trash</WhiteTinyText>
             </CheckboxCard>
+            </CheckboxDiv>
             <HorizontalLine/>
             <GreyBox>
                 <BoxCard>
