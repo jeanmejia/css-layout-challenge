@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row } from '../Row';
+import { ProfileRow } from './ProfileRow';
 import { GreyFullCircle } from './GreyFullCircle';
 import { GreyFullSquare } from './GreyFullSquare';
 import { ProfileContainer } from './ProfileContainer';
@@ -19,15 +19,18 @@ import { GradientBox } from './GradientBox';
 import { MediumText } from '../MediumText';
 import { OrangeButton } from './OrangeButton';
 import { WhiteButtonText } from './WhiteButtonText';
+import { BlueBigRoundSquare} from './BlueBigRoundSquare';
+import { GreenBigRoundSquare} from './GreenBigRoundSquare';
+import { GreyBigRoundSquare} from './GreyBigRoundSquare';
 
 export const Profile = () => {
     return (
         <ProfileContainer>
-            <Row>
+            <ProfileRow>
                 <GreyFullSquare/>
                 <GreyFullSquare/>
                 <GreyFullCircle/>
-            </Row>
+            </ProfileRow>
             <HorizontalLine/>
             <SubTitle>
                 Storage
@@ -49,7 +52,7 @@ export const Profile = () => {
                 </WhiteCard>
             </StorageCard>
             <StorageCard>
-                <OrangeBigRoundSquare/>
+                <BlueBigRoundSquare/>
                 <CardColumn>
                     <CardText>
                         Documents
@@ -63,7 +66,7 @@ export const Profile = () => {
                 </WhiteCard>
             </StorageCard>
             <StorageCard>
-                <OrangeBigRoundSquare/>
+                <GreenBigRoundSquare/>
                 <CardColumn>
                     <CardText>
                         Documents
@@ -77,7 +80,7 @@ export const Profile = () => {
                 </WhiteCard>
             </StorageCard>
             <StorageCard>
-                <OrangeBigRoundSquare/>
+                <GreyBigRoundSquare/>
                 <CardColumn>
                     <CardText>
                         Documents
